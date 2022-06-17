@@ -1,0 +1,15 @@
+{
+  "name": "discord.js-v13-template",
+  "version": "1.0.0",
+  "description": "A discord.js v13 template created by Abel Purnwasy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abel Purnwasy",
+  "license": "GPL",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "fs": "^0.0.1-security"
+  }
+}
