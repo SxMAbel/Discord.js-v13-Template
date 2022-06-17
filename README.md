@@ -11,11 +11,10 @@
 <br />
 <p align="center">
   <a href="https://github.com/SxMAbel/Discord.js-v13-Template">
-    <img src="https://cdn.discordapp.com/attachments/969854833412681738/978616898977693706/unknown.png">    
+    <img src="https://media.discordapp.net/attachments/961995346983149580/987484516962676776/unknown.png">    
+    <img src="https://media.discordapp.net/attachments/961995346983149580/987484571417321592/unknown.png">
+    <img src="https://media.discordapp.net/attachments/961995346983149580/987484672705585212/unknown.png">
     <img src="https://cdn.discordapp.com/attachments/969854833412681738/978616898977693706/unknown.png">
-    <img src="https://cdn.discordapp.com/attachments/969854833412681738/978616898977693706/unknown.png">
-    <img src="https://cdn.discordapp.com/attachments/969854833412681738/978616898977693706/unknown.png">
-
   </a>
 </p>
 
