@@ -1,4 +1,4 @@
-const { Client, CommandInteraction, MessageEmbed } = require("discord.js");
+const { Client, CommandInteraction } = require("discord.js");
 
 module.exports = {
   name: "interactionCreate",
@@ -17,26 +17,11 @@ module.exports = {
       try {
         await slashCommands.run(client, interaction);
       } catch (error) {
-        if (interaction.replied) {
-          await interaction
-            .editReply({
-              embeds: [
-                new MessageEmbed()
-                  .setDescription("An Unexpected Error Occured.")
-                  .setColor("RED"),
-              ],
-            })
-            .catch(() => {});
-        } else {
-          await interaction.followUp({
-            embeds: [
-              new MessageEmbed()
-                .setDescription("An Unexcepted Error Occured.")
-                .setColor("RED"),
-            ],
-          });
-        }
-        console.log(error);
+        await interaction[interaction.replied ? "editReply" : "followUp"]({
+          ephemeral: true,
+          content: `An unexcepted error occured.`,
+        }).catch(() => {});
+        console.error(error);
       }
     } else return;
   },
